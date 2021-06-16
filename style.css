@@ -1048,33 +1048,6 @@ div.modal-background {
   z-index: 1;
 }
 
-div.modal-close {
-  position: fixed;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  color: black;
-  font-weight: bold;
-  z-index: 300;
-  font-size: 2rem;
-  padding: 4rem;
-}
-div.modal-close:hover {
-  color: #e50012;
-}
-@media (max-width: 1440px) {
-  div.modal-close {
-    padding: 3rem;
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 960px) {
-  div.modal-close {
-    padding: 2rem;
-    font-size: 1.2rem;
-  }
-}
-
 div.modal-content {
   position: fixed;
   top: 50%;
@@ -1147,10 +1120,6 @@ a.modal-goodpacker {
 }
 
 @media (max-width: 960px) {
-  div.modal-close {
-    color: white;
-  }
-
   .modal-content {
     display: grid;
     grid-template-rows: repeat(3, 1fr);

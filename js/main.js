@@ -42,30 +42,11 @@ document.addEventListener('scroll', function(){
   })
 })
 
-// history
-// when in-view of history section, make the svg scroll horitontally
 
-const historyImg = document.querySelector("img.history-map")
-
-
-document.addEventListener('scroll', function(){
-  const pixels = window.pageYOffset
-
-  sections.forEach(section => {
-    if(section.hasAttribute("history-section")){
-      historyImg.classList.add("show")
-      console.log("show")
-    } else {
-      historyImg.classList.remove("show")
-      console.log("hide")
-    }
-  })
-  
-})
 
 
 // modal animation
-$(".modal-close").on("click", function () {
+$(".modal-left").on("click", function () {
   $(".modal").fadeOut(500);
   $('article').css('display', 'block')
   $('body').css('overflow', 'scroll')
