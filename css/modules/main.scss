@@ -190,4 +190,7 @@ article:hover {
   @media (max-width: $screen-tablet) {
     padding: 3rem 3rem 3rem 2rem;
   }
+  @media (max-width: $screen-mobile) {
+    padding: 1.5rem;
+  }
 }

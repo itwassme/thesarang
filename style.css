@@ -926,6 +926,11 @@ article:hover .overlay {
     padding: 3rem 3rem 3rem 2rem;
   }
 }
+@media (max-width: 680px) {
+  .global-padding {
+    padding: 1.5rem;
+  }
+}
 
 @keyframes fadein {
   0% {
