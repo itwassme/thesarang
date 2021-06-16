@@ -789,7 +789,7 @@ div.stamps img {
   .business-wrapper article {
     display: block;
     margin-bottom: 1rem;
-    width: 60%;
+    width: 80%;
   }
 }
 
@@ -851,6 +851,24 @@ article:hover .overlay {
   display: none;
 }
 
+.history-desktop-image {
+  display: block;
+}
+@media (max-width: 768px) {
+  .history-desktop-image {
+    display: none;
+  }
+}
+
+.history-mobile-image {
+  display: none;
+}
+@media (max-width: 768px) {
+  .history-mobile-image {
+    display: block;
+  }
+}
+
 .history-image-wrapper {
   display: flex;
   align-items: center;
@@ -858,6 +876,12 @@ article:hover .overlay {
 }
 .history-image-wrapper img {
   max-width: 70%;
+}
+@media (max-width: 768px) {
+  .history-image-wrapper {
+    justify-content: flex-start;
+    width: 70%;
+  }
 }
 
 .height-ratio-wrapper {

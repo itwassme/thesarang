@@ -61,7 +61,7 @@
     article {
       display: block;
       margin-bottom: 1rem;
-      width: 60%;
+      width: 80%;
     }
   }
 }
@@ -124,12 +124,31 @@ article:hover {
 }
 
 // 더사랑 연혁 history
+
+.history-desktop-image {
+  display: block;
+  @media (max-width: $screen-tablet) {
+    display: none;
+  }
+}
+
+.history-mobile-image {
+  display: none;
+  @media (max-width: $screen-tablet) {
+    display: block;
+  }
+}
+
 .history-image-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   img {
     max-width: 70%;
+  }
+  @media (max-width: $screen-tablet) {
+    justify-content: flex-start;
+    width: 70%;
   }
 }
 
