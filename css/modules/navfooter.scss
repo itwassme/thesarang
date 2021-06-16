@@ -1,0 +1,53 @@
+// header animation
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// header styles
+.header-right {
+  padding-top: 0.6rem;
+}
+
+header,
+.intro {
+  @media (max-width: $screen-medium) {
+    padding: 2rem;
+  }
+}
+
+// footer styles
+
+footer a {
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  color: #282828;
+  @media (max-width: $screen-tablet) {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-details {
+  line-height: 1.8;
+  letter-spacing: 0.4px;
+  @media (max-width: $screen-tablet) {
+    display: none;
+  }
+}
+
+@media (max-width: $screen-tablet) {
+  footer div {
+    margin: 0;
+    text-align: center;
+    flex-direction: column;
+  }
+}

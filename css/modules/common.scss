@@ -1,0 +1,62 @@
+body {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  line-height: 1.5;
+  font-weight: normal;
+
+  color: #282828;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header {
+  background-image: url(assets/image1.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.red-bg {
+  background-color: $highlight-color;
+}
+
+.grey-bg {
+  background-color: $light-grey;
+}
+
+// mobile common style sets
+
+@media (max-width: $screen-mobile) {
+  header {
+    height: 60vh !important;
+    max-height: 640px;
+  }
+  section {
+    height: auto !important;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  .card-wrapper {
+    flex-direction: column;
+  }
+  .circle {
+    height: 240px;
+    width: 240px;
+  }
+
+  .business-warpper {
+    flex-direction: column;
+  }
+
+  .business {
+    height: 16.5rem;
+  }
+
+  .overlay img {
+    max-width: 240px;
+  }
+
+  .overlay h2 {
+    font-size: 2rem;
+  }
+}

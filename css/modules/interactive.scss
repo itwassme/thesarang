@@ -1,0 +1,157 @@
+// progress bar
+div.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 6px;
+  z-index: 1;
+  background-color: #fff;
+}
+
+div.progress.red {
+  background-color: $highlight-color;
+}
+
+// 더사랑 가치
+
+section.circles {
+  @media (max-width: $screen-mobile) {
+    height: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.circle-wrapper {
+  padding-right: 10rem;
+  padding-left: 10rem;
+  @media (max-width: 1520px) {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  @media (max-width: 1320px) {
+    padding: 0;
+  }
+  @media (max-width: $screen-mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.circle {
+  border: solid $highlight-color 1px;
+  border-radius: 50%;
+  width: 320px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2,
+  p {
+    margin: 0;
+    color: $highlight-color;
+  }
+  transition: all 0.2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  @media (max-width: 1320px) {
+    width: 300px;
+    height: 300px;
+  }
+  @media (max-width: 1080px) {
+    width: 280px;
+    height: 280px;
+  }
+  @media (max-width: $screen-tachyon-large) {
+    height: 240px;
+    width: 240px;
+  }
+  @media (max-width: 910px) {
+    height: 220px;
+    width: 220px;
+  }
+  @media (max-width: 830px) {
+    height: 200px;
+    width: 200px;
+  }
+  @media (max-width: $screen-mobile) {
+    height: 180px;
+    width: 180px;
+  }
+}
+
+.circle:hover {
+  background-color: $highlight-color;
+  h2 {
+    color: #fff;
+  }
+  p {
+    color: #fff;
+  }
+}
+
+// parallax
+.parallax {
+  position: absolute;
+  z-index: -10;
+}
+.heart1 {
+  width: 50px;
+  right: 400px;
+  bottom: 200px;
+  @media (max-width: $screen-large) {
+    right: 300px;
+  }
+  @media (max-width: $screen-tachyon-large) {
+    width: 34px;
+    right: 200px;
+    bottom: 100px;
+  }
+  @media (max-width: $screen-mobile) {
+    width: 16px;
+    right: 80px;
+    bottom: 60px;
+  }
+}
+.heart2 {
+  width: 120px;
+  right: 200px;
+  bottom: 300px;
+  @media (max-width: $screen-large) {
+    right: 80px;
+  }
+  @media (max-width: $screen-tachyon-large) {
+    width: 100px;
+    right: 60px;
+    bottom: 200px;
+  }
+  @media (max-width: $screen-mobile) {
+    width: 32px;
+    right: 20px;
+  }
+}
+
+// stamp styles
+@keyframes spin {
+  0% {
+    /* transform: translate(-50%, -50%) -- the anchor point is the CENTER of the img itself, not the window */
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+div.stamps {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+}
+
+div.stamps img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation: spin 30s linear infinite;
+}
