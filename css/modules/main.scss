@@ -46,21 +46,23 @@
 }
 
 // 더사랑 사업연혁
-.business {
-  width: 33.333%;
-  display: block;
-  height: 36vw;
-  background-size: cover;
-  background-position: center;
-  h2 {
-    letter-spacing: -1.5px;
+.business-wrapper {
+  padding-right: 6rem;
+  padding-left: 6rem;
+  @media (max-width: $screen-medium) {
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
   @media (max-width: $screen-tachyon-large) {
-    width: 100%;
-    height: 40vw;
+    padding: 0;
   }
   @media (max-width: $screen-mobile) {
-    height: 48vw;
+    flex-direction: column;
+    article {
+      display: block;
+      margin-bottom: 1rem;
+      width: 60%;
+    }
   }
 }
 

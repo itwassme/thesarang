@@ -45,7 +45,7 @@ h3 {
   font-weight: bold;
   line-height: 1.6;
   color: #e50012;
-  @media (max-width: $screen-tachyon-large) {
+  @media (max-width: $screen-medium) {
     font-size: 1.2rem;
   }
 }
@@ -53,14 +53,14 @@ h3 {
 p {
   font-size: 18px;
   line-height: 1.6;
-  @media (max-width: $screen-tachyon-large) {
+  @media (max-width: $screen-medium) {
     font-size: 16px;
   }
 }
 
 footer a {
   font-size: 1.5rem; /* 24px */
-  @media (max-width: $screen-tachyon-large) {
+  @media (max-width: $screen-medium) {
     font-size: 16px;
   }
 }
@@ -71,7 +71,7 @@ footer a {
 
 .message {
   font-size: 2rem;
-  @media (max-width: $screen-tachyon-large) {
+  @media (max-width: $screen-medium) {
     font-size: 1.5rem; /* 24px */
   }
 }

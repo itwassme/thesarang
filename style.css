@@ -477,7 +477,7 @@ h2 {
     /* 24px */
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   h2 {
     font-size: 1.8rem;
   }
@@ -490,7 +490,7 @@ h3 {
   line-height: 1.6;
   color: #e50012;
 }
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   h3 {
     font-size: 1.2rem;
   }
@@ -500,7 +500,7 @@ p {
   font-size: 18px;
   line-height: 1.6;
 }
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   p {
     font-size: 16px;
   }
@@ -510,7 +510,7 @@ footer a {
   font-size: 1.5rem;
   /* 24px */
 }
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   footer a {
     font-size: 16px;
   }
@@ -523,7 +523,7 @@ footer a {
 .message {
   font-size: 2rem;
 }
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .message {
     font-size: 1.5rem;
     /* 24px */
@@ -544,7 +544,7 @@ div.progress.red {
   background-color: #e50012;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   section.circles {
     height: auto;
     padding-top: 4rem;
@@ -567,7 +567,7 @@ div.progress.red {
     padding: 0;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   .circle-wrapper {
     display: flex;
     flex-direction: column;
@@ -591,19 +591,19 @@ div.progress.red {
   margin: 0;
   color: #e50012;
 }
-@media (max-width: 1320px) {
+@media (max-width: 1920px) {
   .circle {
     width: 300px;
     height: 300px;
   }
 }
-@media (max-width: 1080px) {
+@media (max-width: 1440px) {
   .circle {
-    width: 280px;
-    height: 280px;
+    width: 260px;
+    height: 260px;
   }
 }
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .circle {
     height: 240px;
     width: 240px;
@@ -621,7 +621,7 @@ div.progress.red {
     width: 200px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   .circle {
     height: 180px;
     width: 180px;
@@ -660,7 +660,7 @@ div.progress.red {
     bottom: 100px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   .heart1 {
     width: 16px;
     right: 80px;
@@ -685,7 +685,7 @@ div.progress.red {
     bottom: 200px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   .heart2 {
     width: 32px;
     right: 20px;
@@ -749,7 +749,7 @@ div.stamps img {
     width: 100%;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   .card {
     min-height: 23vh;
   }
@@ -767,25 +767,29 @@ div.stamps img {
   margin-top: 2rem;
 }
 
-.business {
-  width: 33.333%;
-  display: block;
-  height: 36vw;
-  background-size: cover;
-  background-position: center;
+.business-wrapper {
+  padding-right: 6rem;
+  padding-left: 6rem;
 }
-.business h2 {
-  letter-spacing: -1.5px;
-}
-@media (max-width: 960px) {
-  .business {
-    width: 100%;
-    height: 40vw;
+@media (max-width: 1024px) {
+  .business-wrapper {
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
 }
-@media (max-width: 640px) {
-  .business {
-    height: 48vw;
+@media (max-width: 960px) {
+  .business-wrapper {
+    padding: 0;
+  }
+}
+@media (max-width: 680px) {
+  .business-wrapper {
+    flex-direction: column;
+  }
+  .business-wrapper article {
+    display: block;
+    margin-bottom: 1rem;
+    width: 60%;
   }
 }
 
@@ -810,7 +814,7 @@ div.stamps img {
   display: none;
   transition: display 1s ease-in;
 }
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   .overlay {
     display: flex;
     background-color: rgba(0, 0, 0, 0.2);
@@ -911,13 +915,6 @@ article:hover .overlay {
   padding-top: 0.6rem;
 }
 
-@media (max-width: 1024px) {
-  header,
-.intro {
-    padding: 2rem;
-  }
-}
-
 footer a {
   text-decoration: none;
   margin-bottom: 0.5rem;
@@ -975,7 +972,7 @@ header {
   background-color: #f2f2f2;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   header {
     height: 60vh !important;
     max-height: 640px;
@@ -1141,6 +1138,9 @@ a.modal-goodpacker {
   .modal-right a {
     height: 50%;
   }
+}
+.business-wrapper {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

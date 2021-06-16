@@ -69,5 +69,6 @@ $(".modal-close").on("click", function () {
   $(".modal").fadeOut(500);
   $('article').css('display', 'block')
   $('body').css('overflow', 'scroll')
+  $('.business-wrapper').css('display', 'flex')
   return false
 });

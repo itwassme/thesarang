@@ -55,15 +55,15 @@ section.circles {
     color: $highlight-color;
   }
   transition: all 0.2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
-  @media (max-width: 1320px) {
+  @media (max-width: $screen-xlarge) {
     width: 300px;
     height: 300px;
   }
-  @media (max-width: 1080px) {
-    width: 280px;
-    height: 280px;
+  @media (max-width: $screen-large) {
+    width: 260px;
+    height: 260px;
   }
-  @media (max-width: $screen-tachyon-large) {
+  @media (max-width: $screen-medium) {
     height: 240px;
     width: 240px;
   }
