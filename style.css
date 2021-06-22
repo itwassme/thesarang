@@ -813,6 +813,11 @@ div.stamps img {
   align-items: center;
   display: none;
   transition: display 1s ease-in;
+  text-align: center;
+  color: #fff;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  flex-direction: column;
 }
 @media (max-width: 680px) {
   .overlay {
@@ -823,11 +828,19 @@ div.stamps img {
 
 .overlay img {
   max-width: 200px;
+  margin-bottom: 1rem;
 }
 @media (max-width: 960px) {
   .overlay img {
     max-width: 140px;
+    margin-bottom: 0.5rem;
   }
+}
+
+div.overlay-tags p {
+  margin: 0;
+  opacity: 1 !important;
+  font-size: 14px;
 }
 
 .overlay h2 {
@@ -845,6 +858,7 @@ article {
 
 article:hover .overlay {
   display: flex;
+  opacity: 1;
 }
 
 .hide-in-mobile {
@@ -977,8 +991,34 @@ footer a:hover {
     flex-direction: column;
   }
 }
+img.ngo-logo {
+  width: 12rem;
+}
+
+.footer-border-bottom {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+@media (max-width: 768px) {
+  .footer-border-bottom {
+    border: none;
+  }
+}
+
+.footer-items {
+  min-width: 6.5rem;
+}
+
+@media (max-width: 768px) {
+  .collaboration-text {
+    max-width: 70%;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+}
 body {
   font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-size: 18px;
   line-height: 1.5;
   font-weight: normal;
   color: #282828;
@@ -1032,6 +1072,7 @@ header {
 
   .overlay img {
     max-width: 240px;
+    margin-top: 1rem;
   }
 
   .overlay h2 {

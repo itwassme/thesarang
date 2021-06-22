@@ -36,6 +36,8 @@ footer a:hover {
   text-decoration: underline;
 }
 
+// 사회적기업 로고 추가된 스타일
+
 .footer-details {
   line-height: 1.8;
   letter-spacing: 0.4px;
@@ -49,5 +51,29 @@ footer a:hover {
     margin: 0;
     text-align: center;
     flex-direction: column;
+  }
+}
+
+img.ngo-logo {
+  width: 12rem;
+}
+
+.footer-border-bottom {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  @media (max-width: $screen-tablet) {
+    border: none;
+  }
+}
+
+.footer-items {
+  min-width: 6.5rem;
+}
+
+@media (max-width: $screen-tablet) {
+  .collaboration-text {
+    max-width: 70%;
+    margin-right: auto !important;
+    margin-left: auto !important;
   }
 }
