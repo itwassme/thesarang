@@ -73,34 +73,33 @@
       </div>
     </div>
 
-    <div class="navigation">
-      <a href="#header" class="logo"
-        ><img src="assets/logo_white.svg" class="w5 mainlogo"
-      /></a>
-      <nav>
-        <a class="mr3 pr4-l pr3" href="#startline">Startline</a>
-        <a class="mr3 pr4-l pr3" href="#mission">미션</a>
-        <a class="mr3 pr4-l pr3" href="#value">가치</a>
-        <a class="mr3 pr4-l pr3" href="#business">사업영역</a>
-        <a href="#history">연혁</a>
-      </nav>
-    </div>
+    <div class="progress"></div>
 
     <header class="w-100 vh-100 flex height-ratio-wrapper">
-      <div class="w-100 h-100 absolute">
-        <h1 class="ma0 white global-padding">
-          발달장애인과 비장애인이<br />
-          함께 만드는 오늘,<br />
-          사랑을 더하다.
-        </h1>
+      <div
+        class="max-width flex justify-between pv5 height-ratio-object global-padding"
+      >
+        <div class="flex flex-column justify-between h-100">
+          <img src="assets/logo_white.svg" class="w5" />
+          <h1 class="ma0 white">
+            발달장애인과 비장애인이<br />
+            함께 만드는 오늘,<br />
+            사랑을 더하다.
+          </h1>
+        </div>
+
+        <div class="header-right flex justify-end">
+          <a
+            class="mr4"
+            href="https://blog.naver.com/thesarang33"
+            target="_blank"
+            ><img src="assets/blog.svg" class="h2"
+          /></a>
+          <a href="https://www.instagram.com/thesarang33/" target="_blank"
+            ><img src="assets/instagram.svg" class="h2"
+          /></a>
+        </div>
       </div>
-      <!-- <div class="flex flex-column justify-between h-100">
-        <h1 class="ma0 white">
-          발달장애인과 비장애인이<br />
-          함께 만드는 오늘,<br />
-          사랑을 더하다.
-        </h1>
-      </div> -->
     </header>
 
     <section class="intro red-bg vh-100 pv5 flex height-ratio-wrapper">
@@ -126,7 +125,6 @@
     <section
       class="vh-100 pa5-l pa4 flex flex-column justify-center relative height-ratio-wrapper"
       bg-is-white="true"
-      id="startline"
     >
       <div
         class="max-width relative height-ratio-object flex flex-column justify-center global-padding"
@@ -149,7 +147,6 @@
     <section
       class="vh-100 grey-bg pa5-l pa4 flex flex-column justify-center height-ratio-wrapper"
       bg-is-white="true"
-      id="mission"
     >
       <div
         class="max-width height-ratio-object flex flex-column justify-center global-padding"
@@ -185,7 +182,6 @@
     <section
       class="circles vh-100 pa5-l pa4 flex flex-column justify-center height-ratio-wrapper"
       bg-is-white="true"
-      id="value"
     >
       <div
         class="max-width height-ratio-object flex flex-column justify-center global-padding"
@@ -210,7 +206,6 @@
 
     <section
       class="vh-100 grey-bg pa5-l pa4 flex flex-column justify-center height-ratio-wrapper"
-      id="business"
     >
       <div
         class="max-width height-ratio-object flex flex-column justify-center global-padding"
@@ -276,7 +271,6 @@
       class="vh-100 pa5-l pa4 flex flex-column justify-center height-ratio-wrapper"
       bg-is-white="true"
       history-section="true"
-      id="history"
     >
       <div
         class="max-width height-ratio-object flex flex-column justify-center global-padding"
@@ -289,8 +283,8 @@
       </div>
     </section>
 
-    <footer class="grey-bg">
-      <div class="max-width global-padding">
+    <footer class="grey-bg pa5">
+      <div class="max-width">
         <div class="footer-border-bottom mv4 flex justify-between items-center">
           <img src="assets/logo.svg" class="w5 mb3" />
           <img class="ngo-logo" src="assets/ngo-logos-black.svg" class="mb3" />
@@ -299,10 +293,8 @@
         <div class="flex justify-between">
           <div class="flex">
             <div class="flex flex-column mr5-l footer-items">
-              <a href="http://bokit.co.kr/" target="_blank">Bokit</a>
-              <a href="http://www.goodpacker.co.kr/" target="_blank"
-                >GoodPacker</a
-              >
+              <a href="http://bokit.co.kr/">Bokit</a>
+              <a href="#">GoodPacker</a>
             </div>
             <div class="flex flex-column footer-items">
               <a href="https://www.instagram.com/thesarang33/" target="_blank"
@@ -333,6 +325,5 @@
     <script src="js/gsap.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/animation.js"></script>
-    <script src="js/navigation.js"></script>
   </body>
 </html>
