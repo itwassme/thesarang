@@ -179,7 +179,7 @@ article:hover {
   }
 }
 
-@media (max-width: $screen-tablet) {
+@media (max-width: $screen-tachyon-large) {
   header.height-ratio-wrapper {
     height: 40vh;
   }
@@ -202,7 +202,10 @@ article:hover {
 
 .global-padding {
   padding: 4rem;
-  @media (max-width: $screen-tablet) {
+  @media (max-width: $screen-medium) {
+    padding: 3.2rem;
+  }
+  @media (max-width: $screen-tachyon-large) {
     padding: 3rem 3rem 3rem 2rem;
   }
   @media (max-width: $screen-mobile) {

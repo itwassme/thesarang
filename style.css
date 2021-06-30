@@ -896,7 +896,7 @@ article:hover .overlay {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   header.height-ratio-wrapper {
     height: 40vh;
   }
@@ -921,7 +921,12 @@ article:hover .overlay {
 .global-padding {
   padding: 4rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .global-padding {
+    padding: 3.2rem;
+  }
+}
+@media (max-width: 960px) {
   .global-padding {
     padding: 3rem 3rem 3rem 2rem;
   }
@@ -951,6 +956,17 @@ header h1 {
 
 div.navigation img.mainlogo {
   margin-bottom: 0 !important;
+}
+
+div.hero-socials {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+@media (max-width: 680px) {
+  div.hero-socials img {
+    max-width: 2rem;
+  }
 }
 
 div.navigation {
@@ -1074,7 +1090,7 @@ footer a:hover {
   }
 }
 img.ngo-logo {
-  width: 12rem;
+  width: 16rem;
 }
 
 .footer-border-bottom {

@@ -22,6 +22,17 @@ div.navigation img.mainlogo {
   margin-bottom: 0 !important;
 }
 
+div.hero-socials {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  @media (max-width: $screen-mobile) {
+    img {
+      max-width: 2rem;
+    }
+  }
+}
+
 // 2nd header styles
 div.navigation {
   position: fixed;
@@ -141,7 +152,10 @@ footer a:hover {
 }
 
 img.ngo-logo {
-  width: 12rem;
+  width: 16rem;
+  // @media (max-width: $screen-tablet) {
+  //   width: 12rem;
+  // }
 }
 
 .footer-border-bottom {
